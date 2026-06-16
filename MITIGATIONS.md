@@ -41,6 +41,7 @@ New contributions to the mitigations are licensed under the [Community Specifica
 | [SAF-M-7](mitigations/SAF-M-7/README.md) | Content Rendering Parity | UI Security | Medium-High |
 | [SAF-M-8](mitigations/SAF-M-8/README.md) | Visual Validation | UI Security | Medium |
 | [SAF-M-9](mitigations/SAF-M-9/README.md) | Sandboxed Testing | Isolation and Containment | High |
+| [SAF-M-74](mitigations/SAF-M-74/README.md) | Per-Invocation Capability Brokering | Isolation and Containment | High |
 | [SAF-M-10](mitigations/SAF-M-10/README.md) | Automated Scanning | Detective Control | Medium |
 | [SAF-M-11](mitigations/SAF-M-11/README.md) | Behavioral Monitoring | Detective Control | High |
 | [SAF-M-12](mitigations/SAF-M-12/README.md) | Audit Logging | Detective Control | Medium-High |
@@ -83,9 +84,9 @@ New contributions to the mitigations are licensed under the [Community Specifica
 
 ## Summary Statistics
 
-- **Total Mitigations**: 47
-- **High Effectiveness**: 26 (55%)
-- **Medium-High Effectiveness**: 15 (32%)
+- **Total Mitigations**: 48
+- **High Effectiveness**: 27 (56%)
+- **Medium-High Effectiveness**: 15 (31%)
 - **Medium Effectiveness**: 6 (13%)
 - **Low Effectiveness**: 0 (0%)
 
@@ -103,7 +104,7 @@ New contributions to the mitigations are licensed under the [Community Specifica
 | Supply Chain Security | 4 |
 | Data Security | 2 |
 | Architectural Control | 4 |
-| Isolation and Containment | 1 |
+| Isolation and Containment | 2 |
 | Risk Management | 1 |
 | Human Factors | 1 |
 

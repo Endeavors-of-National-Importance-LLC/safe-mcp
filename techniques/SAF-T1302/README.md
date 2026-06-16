@@ -127,6 +127,7 @@ fields:
 3.  **[SAF-M-5: Content Sanitization](../../mitigations/SAF-M-5/README.md)**: Strictly validate and allowlist arguments. Reject shell metacharacters.
 4.  **[SAF-M-9: Sandboxed Testing](../../mitigations/SAF-M-9/README.md)**: Use container security contexts (`runAsNonRoot: true`, `allowPrivilegeEscalation: false`) to enforce isolation at the OS level.
 5.  **Filesystem Isolation**: Use `chroot` (Linux) or similar jail mechanisms to restrict the tool's file access to a specific directory tree, preventing access to the real root filesystem even if the process has elevated privileges within that scope.
+6.  **[SAF-M-74: Per-Invocation Capability Brokering](../../mitigations/SAF-M-74/README.md)**: Enforce per-call Landlock and seccomp ceilings so privileged tools cannot reach paths or syscalls outside their declared manifest even when an agent is tricked into invoking them.
 
 ### Detective Controls
 1.  **[SAF-M-12: Audit Logging](../../mitigations/SAF-M-12/README.md)**: Log the Effective User ID (EUID) of the process executing the tool.

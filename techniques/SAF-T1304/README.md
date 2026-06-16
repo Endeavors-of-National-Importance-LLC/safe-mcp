@@ -177,6 +177,7 @@ tags:
 5. **Token Scope Validation**: Implement strict scope validation to prevent tokens from being used outside their intended purpose ([OAuth 2.0 Security Best Practices](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics))
 6. **Proof of Possession (PoP) Tokens**: Use PoP tokens that bind authentication to specific clients and prevent relay attacks ([RFC 7800](https://tools.ietf.org/html/rfc7800))
 7. **Short Token Lifetimes**: Implement short-lived tokens with frequent rotation to limit the window for relay attacks ([OAuth 2.1 Security](https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/))
+8. **[SAF-M-74: Per-Invocation Capability Brokering](../../mitigations/SAF-M-74/README.md)**: Issue phantom tokens scoped to a single tool invocation so stolen credentials cannot be relayed to higher-privilege tools outside the invocation window.
 
 ### Detective Controls
 1. **[SAF-M-10: Automated Scanning](../../mitigations/SAF-M-10/README.md)**: Regularly scan for unusual token usage patterns and cross-tool authentication

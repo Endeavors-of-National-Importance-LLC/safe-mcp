@@ -287,6 +287,7 @@ tags:
 3. **[SAF-M-6: Sandboxing](../../mitigations/SAF-M-6/README.md)**: Isolate package installation processes in sandboxed environments
 4. **[SAF-M-8: Network Security](../../mitigations/SAF-M-8/README.md)**: Monitor and restrict network access during package installations
 5. **[SAF-M-12: Audit Logging](../../mitigations/SAF-M-12/README.md)**: Comprehensive logging of AI tool invocations and system commands
+6. **[SAF-M-74: Per-Invocation Capability Brokering](../../mitigations/SAF-M-74/README.md)**: When weaponization flows through MCP tool execution, constrain each call to declared binaries and filesystem scope via per-invocation capability manifests (does not address postinstall scripts that invoke standalone AI CLIs outside MCP).
 
 ### AI Tool Hardening
 - **Disable Dangerous Flags**: Configure AI CLI tools to reject dangerous permission-bypassing flags
