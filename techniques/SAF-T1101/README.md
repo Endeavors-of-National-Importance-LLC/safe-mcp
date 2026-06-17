@@ -602,7 +602,6 @@ class SecureMCPServer:
 2. **Environment Variables**: Set minimal, explicit environment variables for subprocesses
 3. **Resource Limits**: Implement CPU, memory, and file descriptor limits
 4. **Syscall Filtering**: Use seccomp-bpf to restrict available system calls
-<!-- SAF-M-74 added via PR [branch: add-saf-m-74-per-invocation-capability-brokering]; this section's other items lack SAF-M cross-links as of this PR -->
 5. **[SAF-M-74: Per-Invocation Capability Brokering](../../mitigations/SAF-M-74/README.md)**: Confine successful command injection to per-call syscall, filesystem, and binary allowlists rather than preventing injection itself.
 
 ### Detective Controls
