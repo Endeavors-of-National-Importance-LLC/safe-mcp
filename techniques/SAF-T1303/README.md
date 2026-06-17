@@ -83,6 +83,7 @@ Important: The standalone Sigma rule for this technique is provided in `detectio
 1. **SAF-M-9: Sandboxed Testing**: Run new/updated MCP tools/servers in tightly isolated environments; disable privileged modes and restrict host mounts during evaluation.
 2. **SAF-M-6: Tool Registry Verification**: Enforce provenance and review for tools/servers that can invoke container runtimes; verify configuration and runtime versions.
 3. **SAF-M-14: Server Allowlisting**: Limit which MCP servers may be attached or invoked, reducing exposure to malicious orchestrators.
+4. **SAF-M-74: Per-Invocation Capability Brokering**: Limit filesystem and syscall reach after a container boundary violation by applying per-invocation Landlock and seccomp profiles (does not substitute for patching vulnerable runtimes).
 
 ### Detective Controls
 1. **SAF-M-12: Audit Logging**: Log runtime invocations, including working directory and mount details, to support detection and forensics.
